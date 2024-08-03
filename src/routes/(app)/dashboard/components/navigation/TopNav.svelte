@@ -1,8 +1,12 @@
 <script>
+    import { activeDashboardPage } from "$lib/firebase";
+
     // Reactive variables to handle the menu state
     let mobileMenuOpen = false;
     let userMenuOpen = false;
-    let activePage = "Scan-Item"; // Track the active page
+    let activePage = {$activeDashboardPage}; // Track the active page
+
+    $: console.log($activeDashboardPage);
 
     // Toggle the mobile menu
     function toggleMobileMenu() {
@@ -18,8 +22,10 @@
     function setActivePage(page) {
         activePage = page;
         mobileMenuOpen = false; // Close the mobile menu when a selection is made
+        activeDashboardPage.set(page);
     }
 </script>
+
 <!-- {activePage} -->
 <nav class="bg-gray-800">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -72,11 +78,11 @@
             >
                 <div class="flex flex-shrink-0 items-center">
                     <a href="/">
-                    <img
-                        class="h-8 w-auto"
-                        src="/logos/light-logo-text.png"
-                        alt="Eat Smart"
-                    />
+                        <img
+                            class="h-8 w-auto"
+                            src="/logos/light-logo-text.png"
+                            alt="Eat Smart"
+                        />
                     </a>
                 </div>
                 <div class="hidden sm:ml-6 sm:block">
@@ -85,44 +91,24 @@
                         <a
                             href="#"
                             class={`rounded-md px-3 py-2 text-sm font-medium ${
-                                activePage === "Scan-Item"
+                                activePage === "scan-item"
                                     ? "bg-gray-900 text-white"
                                     : "text-gray-300 hover:bg-gray-700 hover:text-white"
                             }`}
-                            aria-current={activePage === "Scan-Item"
+                            aria-current={activePage === "scan-item"
                                 ? "page"
                                 : undefined}
-                            on:click={() => setActivePage("Scan-Item")}
+                            on:click={() => setActivePage("scan-item")}
                             >Scan Item</a
                         >
                         <a
                             href="#"
                             class={`rounded-md px-3 py-2 text-sm font-medium ${
-                                activePage === "Team"
+                                activePage === "history"
                                     ? "bg-gray-900 text-white"
                                     : "text-gray-300 hover:bg-gray-700 hover:text-white"
                             }`}
-                            on:click={() => setActivePage("Team")}>Team</a
-                        >
-                        <a
-                            href="#"
-                            class={`rounded-md px-3 py-2 text-sm font-medium ${
-                                activePage === "Projects"
-                                    ? "bg-gray-900 text-white"
-                                    : "text-gray-300 hover:bg-gray-700 hover:text-white"
-                            }`}
-                            on:click={() => setActivePage("Projects")}
-                            >Projects</a
-                        >
-                        <a
-                            href="#"
-                            class={`rounded-md px-3 py-2 text-sm font-medium ${
-                                activePage === "Calendar"
-                                    ? "bg-gray-900 text-white"
-                                    : "text-gray-300 hover:bg-gray-700 hover:text-white"
-                            }`}
-                            on:click={() => setActivePage("Calendar")}
-                            >Calendar</a
+                            on:click={() => setActivePage("history")}>History</a
                         >
                     </div>
                 </div>
