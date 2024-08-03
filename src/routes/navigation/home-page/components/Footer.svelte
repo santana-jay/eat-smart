@@ -142,9 +142,9 @@
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
                                 <a
-                                    href="#"
+                                    href="/dashboard"
                                     class="text-sm leading-6 text-gray-300 hover:text-white"
-                                    >Marketing</a
+                                    >Dashboard</a
                                 >
                             </li>
                             <li>
@@ -214,7 +214,7 @@
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
                                 <a
-                                    href="#"
+                                    href="/about-us"
                                     class="text-sm leading-6 text-gray-300 hover:text-white"
                                     >About</a
                                 >

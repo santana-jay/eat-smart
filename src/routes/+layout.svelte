@@ -1,4 +1,5 @@
 <script>
+  import { page } from '$app/stores';
   import "../app.css";
   import TopNav from "./navigation/home-page/components/TopNav.svelte";
   import Footer from "./navigation/home-page/components/Footer.svelte";
@@ -9,6 +10,12 @@
   <meta name="description" content="Barcode scanner for ingredients" />
 </svelte:head>
 
-<TopNav />
+{#if !($page.url.pathname.startsWith('/dashboard'))}
+  <TopNav />
+{/if}
+
 <slot />
-<Footer />
+
+{#if !($page.url.pathname.startsWith('/dashboard'))}
+  <Footer />
+{/if}

@@ -174,12 +174,12 @@
                 >Features</a
             >
             <a
-                href="/"
+                href="/dashboard"
                 class="text-sm font-semibold leading-6 text-gray-900"
-                >Become Sponsor</a
+                >Dashboard</a
             >
             <a
-                href="/"
+                href="/about-us"
                 class="text-sm font-semibold leading-6 text-gray-900">About Us</a
             >
         </div>
@@ -281,12 +281,12 @@
                                 >Features</a
                             >
                             <a
-                                href="/"
+                                href="/dashboard"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                >Become Sponsor</a
+                                >Dashboard</a
                             >
                             <a
-                                href="/"
+                                href="/about-us"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >About Us</a
                             >
