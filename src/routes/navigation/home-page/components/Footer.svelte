@@ -235,14 +235,14 @@
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
                                 <a
-                                    href="#"
+                                    href="/legal/terms-of-service"
                                     class="text-sm leading-6 text-gray-300 hover:text-white"
                                     >Terms</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/legal/privacy-policy"
                                     class="text-sm leading-6 text-gray-300 hover:text-white"
                                     >Privacy</a
                                 >
