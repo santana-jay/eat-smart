@@ -80,7 +80,7 @@
 
                 {#if isProductMenuOpen}
                     <div
-                        class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+                        class="absolute -left-8 top-full z-20 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
                     >
                         <div class="p-4">
                             <div
@@ -197,7 +197,7 @@
         <div class="lg:hidden" role="dialog" aria-modal="true">
             <div class="fixed inset-0"></div>
             <div
-                class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+                class="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
             >
                 <div class="flex items-center justify-between">
                     <a href="/" class="-m-1.5 p-1.5">
