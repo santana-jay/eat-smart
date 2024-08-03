@@ -75,7 +75,11 @@
                             />
                         </svg>
                     </a> -->
-                    <a href="https://github.com/santana-jay" target="_blank" class="text-gray-500 hover:text-gray-400">
+                    <a
+                        href="https://github.com/santana-jay"
+                        target="_blank"
+                        class="text-gray-500 hover:text-gray-400"
+                    >
                         <span class="sr-only">GitHub</span>
                         <svg
                             class="h-6 w-6"
@@ -90,7 +94,11 @@
                             />
                         </svg>
                     </a>
-                    <a href="https://github.com/daniel-barker" target="_blank" class="text-gray-500 hover:text-gray-400">
+                    <a
+                        href="https://github.com/daniel-barker"
+                        target="_blank"
+                        class="text-gray-500 hover:text-gray-400"
+                    >
                         <span class="sr-only">GitHub</span>
                         <svg
                             class="h-6 w-6"
@@ -105,7 +113,11 @@
                             />
                         </svg>
                     </a>
-                    <a href="https://github.com/chriszmx" target="_blank" class="text-gray-500 hover:text-gray-400">
+                    <a
+                        href="https://github.com/chriszmx"
+                        target="_blank"
+                        class="text-gray-500 hover:text-gray-400"
+                    >
                         <span class="sr-only">GitHub</span>
                         <svg
                             class="h-6 w-6"
