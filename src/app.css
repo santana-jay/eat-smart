@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply the scrollbar styles globally */
+html {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #4a90e2 #f5f5f5; /* Firefox */
+}
+
+/* Webkit-based browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5; /* Track color */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(
+        45deg,
+        #ff6b6b,
+        #f0e130,
+        #4a90e2
+    ); /* Gradient color */
+    border-radius: 6px;
+    border: 2px solid #f5f5f5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+    transition: background-image 0.3s ease, box-shadow 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(
+        45deg,
+        #f0e130,
+        #4a90e2,
+        #ff6b6b
+    ); /* Change on hover */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
