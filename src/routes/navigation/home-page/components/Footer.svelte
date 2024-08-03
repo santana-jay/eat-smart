@@ -13,8 +13,7 @@
                     alt="Eat Smart Logo"
                 />
                 <p class="text-sm leading-6 text-gray-300">
-                    Making the world a better place through constructing elegant
-                    hierarchies.
+                    Scan Your Way to Better Health: Making Smarter Food Decisions Simple.
                 </p>
                 <div class="flex space-x-6">
                     <!-- <a href="#" class="text-gray-500 hover:text-gray-400">
