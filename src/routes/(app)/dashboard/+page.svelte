@@ -6,7 +6,6 @@
 </script>
 
 <TopNav />
-<ScanItem />
 
 {#if $activeDashboardPage === 'scan-item'}
     <ScanItem />

@@ -4,7 +4,7 @@
     // Reactive variables to handle the menu state
     let mobileMenuOpen = false;
     let userMenuOpen = false;
-    let activePage = "scan-item"; // Track the active page
+    let activePage = {$activeDashboardPage}; // Track the active page
 
     $: console.log($activeDashboardPage);
 
